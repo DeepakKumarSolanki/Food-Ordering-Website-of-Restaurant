@@ -1,0 +1,36 @@
+/* section  */
+
+#services .box img{
+    height: 100px;
+    width: 100px;
+    display: block;
+    margin: auto;
+    transition-property: background-color 2s ease-in-out 1s;
+    cursor: pointer;
+    /* transform: translate(100px , 100px); */
+}
+#services .box img:hover{
+    width: 250px;
+    height: 150px;
+}
+#services{
+    display: flex;
+}
+#services .box{
+    border: 2px solid black;
+    margin: 0px 10px;
+    background-color: black;
+    color: white;
+
+}
+.box h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

@@ -1,0 +1,36 @@
+form{
+    justify-content: center;
+    align-items: center;
+    padding: 10px ;
+    margin: 65px;
+}
+#contact{
+    background: url("img/contact-us-2993000_1280.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35rem;
+    margin-top: 50px;
+    
+}
+#footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+#form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    background-color: black;
+    color: white;
+    margin: auto;
+    height: 30px;
+    display: block;
+    margin-top: 10px;
+}
+.forms data{
+    margin-bottom: 20px;
+}

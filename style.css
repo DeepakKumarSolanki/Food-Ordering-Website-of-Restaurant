@@ -1,0 +1,257 @@
+@import url();
+
+/* css reset */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* css variable */
+:root{
+    --navbar-height:50px;
+}
+
+/* navigation bar */
+#navbar ul{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    /* margin: 12px; */
+    /* justify-content: center;
+    align-items: center; */
+    background-color:black;
+    padding: 13px 22px;
+}
+.item a{
+    color: rgb(153, 12, 106);
+    font-size: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    /* background-color: rgb(56, 77, 77); */
+    
+}
+a:hover{
+    background-color: white;
+    padding: 5px;
+    color: green;
+}
+
+/* home section */
+#home{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+/* background-color: rgb(227, 227, 135); */
+padding: 23px 34px;
+background: url("img/chef-5993951_1280.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+ 
+ color: rgb(246, 240, 242);
+ width:100%vw;
+ height: 17rem;
+ margin: 3px;
+ opacity: 0.9;
+}
+.btn{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    margin: 8px;
+    padding: 8px;
+    border: 4px solid orange;
+    border-radius: 10px;
+}
+
+#home h1{
+    font-size: 3.5rem;
+    text-align: center;
+    color: rgb(224, 152, 19);
+}
+#home p{
+    font-size: 1.1rem;
+    text-align: center;
+    color: rgb(138, 178, 19);
+}
+.search{
+   padding: 0 0 0 20%;
+}
+
+/* section  */
+
+#services .box img{
+    height: 100px;
+    width: 100px;
+    display: block;
+    margin: auto;
+    transition-property: background-color 2s ease-in-out 1s;
+    cursor: pointer;
+    /* transform: translate(100px , 100px); */
+}
+#services .box img:hover{
+    width: 250px;
+    height: 150px;
+}
+#services{
+    display: flex;
+}
+#services .box{
+    border: 2px solid black;
+    margin: 0px 10px;
+    background-color: black;
+    color: white;
+
+}
+.box h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+h1{
+    font-size: 2.5rem;
+    color: white;
+}
+body{
+    background-color: rgb(216, 171, 131);
+}
+
+/* client section */
+
+#c{
+    background: url("client/charlesdeluvio-AT5vuPoi8vc-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 20px 0px;
+    height: 29rem;
+    
+}
+ #client .img1 img{
+
+display: block;
+margin: auto;
+    height: 100px;
+    width: 100px;
+    transition-property: background-color 2s ease-in-out 1s;
+    margin: 0px 30px;
+    cursor: pointer;
+
+}
+#client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#client .img1 img:hover{
+    width: 250px;
+    height: 150px;
+
+
+}
+#p{
+    color: white;
+
+}
+
+/* contact section */
+
+#form{
+    justify-content: center;
+    align-items: center;
+    padding: 10px ;
+    margin: 65px;
+}
+#contact{
+    background: url("img/contact-us-2993000_1280.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35rem;
+    margin-top: 50px;
+}
+#footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+#type input{
+    display: flex;
+    flex-direction: column;
+    
+    margin: 0px 10px;
+    padding: 13px;
+}
+#form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    background-color: black;
+    color: white;
+    margin: auto;
+    height: 30px;
+    display: block;
+}
+
+
+/*  ORDER SECTION */
+#order .box img{
+    height: 100px;
+    width: 100px;
+    display: block;
+    margin: auto;
+    transition-property: background-color 2s ease-in-out 1s;
+    cursor: pointer;
+    /* transform: translate(100px , 100px); */
+}
+#order .box img:hover{
+    width: 250px;
+    height: 150px;
+}
+#order{
+    display: flex;
+}
+#order .box{
+    border: 2px solid black;
+    margin: 0px 10px;
+    background-color: black;
+    color: white;
+
+}
+.box h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* @media only screen and (max-width:800px)and (min-width:300px) {
+    .search{
+        padding: 0 0 0 0px;
+     }
+    } */
+
+    @media screen and (max-width: 768px) {
+    #services, #client, #order, #navbar {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 80%;
+    }
+}
